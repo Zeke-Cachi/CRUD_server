@@ -1,4 +1,5 @@
 const { check } = require('express-validator');
+const { checkBrand } = require('./checkBrand')
 
 const editChecks = [
     check('name')
@@ -30,7 +31,8 @@ const editChecks = [
     check('brand')
         .optional()
         .notEmpty().withMessage('The field "brand" cannot be empty')
-        .isString().withMessage('the field "brand" cannot be a number'),
+        .isString().withMessage('the field "brand" cannot be a number')
+        .custom(checkBrand),
 
     check('active')
         .optional()

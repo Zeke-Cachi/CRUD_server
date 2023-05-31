@@ -16,7 +16,6 @@ const apiRouter = require('./routes/api');
 app.use(express.json());
 app.use(logger('dev'));
 app.use(cors());
-app.use(cookie());
 
 
 app.use('/', indexRouter)
