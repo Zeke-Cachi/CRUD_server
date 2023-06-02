@@ -3,7 +3,7 @@ const express = require('express');
 const router = express.Router();
 
 //CONTROLLERS
-const apiController = require('../Controllers/apiController');
+const apiController = require('../controllers/apiController');
 
 //MIDDLEWARES
 const createChecks = require('../middlewares/createChecks');
