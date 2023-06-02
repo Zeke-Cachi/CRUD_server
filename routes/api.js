@@ -9,7 +9,7 @@ const apiController = require('../Controllers/apiController');
 const createChecks = require('../middlewares/createChecks');
 const editChecks = require('../middlewares/editChecks')
 const { validateChecks } = require('../middlewares/validateChecks')
-const { validateId } = require('../middlewares/validateId')
+const { validateId } = require('../middlewares/validateId');
 
 //GET REQUESTS
 router.get('/list', apiController.getList)
